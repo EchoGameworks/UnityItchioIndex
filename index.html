@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--Instructions: -->
+<!-- 1) replace 'Your Game Name' in the title area with your game name -->
+<!-- 2) modify your width and height in the div called 'gameContainer' to your game's dimensions -->
+<!-- 3) if needed, modify the pixel adjustment amount in the '#moved' CSS margin-top and margin-left  -->
+<!-- 4) copy and paste this file over your build's index.html -->
+<!-- 5) upload to itch.io and make sure the layout lines up correctly -->
+<!-- 6) repeat step 2-5 if needed -->
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Your Game Name</title>
+    <style type="text/css">
+            #moved {
+                position:absolute;
+                margin-top:-9px;
+                margin-left:-9px;
+            }
+        </style>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json");
+    </script>
+  </head>
+  <body>
+    <div id="moved">
+      <div id="gameContainer" style="width: 640px; height: 480px;"></div>
+    </div>
+  </body>
+</html>
